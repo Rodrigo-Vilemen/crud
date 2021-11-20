@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, state } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -28,9 +28,11 @@ class App extends Component {
             </div>
           </nav>
           <Switch>
+            {/* <Routers> */}
               <Route exact path='/create' component={ Create } />
               <Route path='/edit/:id' component={ Edit } />
               <Route path='/index' component={ Index } />
+            {/* </Routers> */}
           </Switch>
         </div>
       </Router>
